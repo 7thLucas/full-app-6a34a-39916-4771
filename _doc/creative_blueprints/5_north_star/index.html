@@ -1,0 +1,70 @@
+<style>
+.mode-landscape .sl-value-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-portrait .sl-value-grid { grid-template-columns: repeat(1, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-5">
+
+    <!-- Header -->
+    <div>
+      <span class="text-xs font-bold tracking-widest uppercase text-rose-500 block mb-2">North Star Metric</span>
+      <h2 class="text-3xl font-black text-slate-900 leading-tight">Weekly Price Comparisons Performed</h2>
+      <p class="text-sm text-slate-500 mt-2 leading-relaxed" style="max-width: 42rem;">The single verified operation this app exists to deliver: a user searches for a fashion item and receives a complete, ranked price comparison across all tracked platforms.</p>
+    </div>
+
+    <!-- Projected impact label -->
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 border border-amber-200 w-fit">
+      <svg class="w-4 h-4 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+      <span class="text-xs font-bold text-amber-700">Projected impact — based on your inputs</span>
+    </div>
+
+    <!-- WVO Formula block -->
+    <div class="bg-slate-50 rounded-2xl p-6">
+      <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">WVO Formula</p>
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold border border-amber-200">
+          ✏️ Daily Active Users — adjust this
+        </span>
+        <span class="text-slate-400 font-bold">×</span>
+        <span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold border border-amber-200">
+          ✏️ Searches / user / day — adjust this
+        </span>
+        <span class="text-slate-400 font-bold">× 7 days</span>
+        <span class="text-slate-400 font-bold">=</span>
+        <span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-slate-800 text-white text-xs font-bold">
+          Weekly Verified Operations
+        </span>
+      </div>
+      <p class="text-xs text-slate-400 italic mt-3">
+        Example: 500 DAU × 3 searches / day × 7 days = <strong class="text-slate-600 not-italic">10,500 price comparisons / week</strong>
+      </p>
+    </div>
+
+    <!-- Value derivation -->
+    <div class="sl-value-grid grid gap-4 flex-1">
+
+      <div class="bg-rose-50 rounded-2xl p-6 flex flex-col gap-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-rose-500">Value per Operation</p>
+        <div class="flex items-start gap-2">
+          <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold border border-amber-200 flex-shrink-0">✏️ ~20 min saved — adjust</span>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Each comparison replaces ~20 min of manual tab-switching — anchored in time reclaimed per search session.</p>
+        <p class="text-xs text-slate-400 italic">WVO × 20 min × (user's hourly time value) = weekly time value</p>
+      </div>
+
+      <div class="bg-slate-900 rounded-2xl p-6 flex flex-col gap-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Total Weekly Value</p>
+        <div class="flex-1 flex items-center">
+          <span class="inline-flex items-center gap-1 px-3 py-2 rounded-xl bg-amber-100 text-amber-800 text-sm font-bold border border-amber-200">
+            ✏️ Fill in your DAU to calculate
+          </span>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">Once DAU and search rate are confirmed:<br/>WVO × 20 min × time value = weekly impact<br/>× 52 = annual impact</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
