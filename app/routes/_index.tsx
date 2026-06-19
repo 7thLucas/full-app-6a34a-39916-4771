@@ -122,7 +122,7 @@ function ResultCard({
     ? "#E63946"
     : hovered
     ? "#C8A96E"
-    : "#222222";
+    : "#E0E0E0";
 
   const formattedPrice = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -135,7 +135,7 @@ function ResultCard({
     <div
       className="relative rounded-xl p-5 transition-all duration-300"
       style={{
-        backgroundColor: "#141414",
+        backgroundColor: "#FFFFFF",
         border: `1px solid ${borderColor}`,
         opacity: result.availability === "Out of Stock" ? 0.55 : 1,
         animation: `faseyeon-fadein 0.4s ease-out ${index * 0.06}s both`,
@@ -162,7 +162,7 @@ function ResultCard({
         <div className="flex-1 min-w-0">
           <p
             className="text-sm font-semibold leading-tight truncate"
-            style={{ color: "#F5F5F5", fontFamily: "'Inter', sans-serif" }}
+            style={{ color: "#111111", fontFamily: "'Inter', sans-serif" }}
             title={result.itemName}
           >
             {result.itemName}
@@ -170,7 +170,7 @@ function ResultCard({
           {result.variant && (
             <p
               className="text-xs mt-1 truncate"
-              style={{ color: "#888888" }}
+              style={{ color: "#666666" }}
               title={result.variant}
             >
               {result.variant}
@@ -186,7 +186,7 @@ function ResultCard({
           <span
             className="text-xl font-bold leading-none"
             style={{
-              color: isBestPrice ? "#2ECC71" : "#F5F5F5",
+              color: isBestPrice ? "#2ECC71" : "#111111",
               fontFamily: "'Inter', sans-serif",
               animation: isBestPrice ? "faseyeon-pricein 0.5s ease-out both" : undefined,
             }}
@@ -225,7 +225,7 @@ function ResultCard({
           ) : (
             <span
               className="inline-flex items-center px-3.5 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider"
-              style={{ backgroundColor: "#222222", color: "#666666" }}
+              style={{ backgroundColor: "#EBEBEB", color: "#888888" }}
             >
               Sold Out
             </span>
@@ -257,11 +257,11 @@ function DropBanner({ count, searchedItem }: { count: number; searchedItem: stri
         <div>
           <p
             className="text-sm font-bold"
-            style={{ color: "#F5F5F5", fontFamily: "'Inter', sans-serif" }}
+            style={{ color: "#111111", fontFamily: "'Inter', sans-serif" }}
           >
             {count} Exclusive Drop{count !== 1 ? "s" : ""} Found
           </p>
-          <p className="text-xs mt-0.5" style={{ color: "#888888" }}>
+          <p className="text-xs mt-0.5" style={{ color: "#666666" }}>
             Limited availability for &ldquo;{searchedItem}&rdquo;
           </p>
         </div>
@@ -288,7 +288,7 @@ function EmptyState({ query }: { query: string }) {
     >
       <div
         className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-        style={{ backgroundColor: "#141414", border: "1px solid #222222" }}
+        style={{ backgroundColor: "#F5F5F5", border: "1px solid #E0E0E0" }}
       >
         <svg
           width="24"
@@ -303,10 +303,10 @@ function EmptyState({ query }: { query: string }) {
           <path d="m21 21-4.35-4.35" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       </div>
-      <p className="text-base font-semibold" style={{ color: "#F5F5F5" }}>
+      <p className="text-base font-semibold" style={{ color: "#111111" }}>
         No results for &ldquo;{query}&rdquo;
       </p>
-      <p className="text-sm mt-2" style={{ color: "#888888" }}>
+      <p className="text-sm mt-2" style={{ color: "#666666" }}>
         Try a different item name or check the spelling.
       </p>
     </div>
@@ -321,20 +321,20 @@ function SearchSkeleton() {
           key={i}
           className="rounded-xl p-5 animate-pulse"
           style={{
-            backgroundColor: "#141414",
-            border: "1px solid #222222",
+            backgroundColor: "#FFFFFF",
+            border: "1px solid #E0E0E0",
             animationDelay: `${i * 0.1}s`,
           }}
         >
           <div className="flex items-center gap-2 mb-3">
             <div
               className="h-5 rounded"
-              style={{ width: "80px", backgroundColor: "#222222" }}
+              style={{ width: "80px", backgroundColor: "#E0E0E0" }}
             />
             {i === 0 && (
               <div
                 className="h-5 rounded-full"
-                style={{ width: "100px", backgroundColor: "#222222" }}
+                style={{ width: "100px", backgroundColor: "#E0E0E0" }}
               />
             )}
           </div>
@@ -342,21 +342,21 @@ function SearchSkeleton() {
             <div className="flex-1 space-y-2">
               <div
                 className="h-4 rounded"
-                style={{ width: "60%", backgroundColor: "#222222" }}
+                style={{ width: "60%", backgroundColor: "#E0E0E0" }}
               />
               <div
                 className="h-3 rounded"
-                style={{ width: "40%", backgroundColor: "#1a1a1a" }}
+                style={{ width: "40%", backgroundColor: "#EBEBEB" }}
               />
             </div>
             <div className="flex flex-col items-end gap-2">
               <div
                 className="h-6 rounded"
-                style={{ width: "64px", backgroundColor: "#222222" }}
+                style={{ width: "64px", backgroundColor: "#E0E0E0" }}
               />
               <div
                 className="h-7 rounded-lg"
-                style={{ width: "80px", backgroundColor: "#222222" }}
+                style={{ width: "80px", backgroundColor: "#E0E0E0" }}
               />
             </div>
           </div>
@@ -392,21 +392,21 @@ function PriceSummaryBar({
     <div
       className="rounded-xl px-5 py-4 flex flex-wrap items-center gap-x-6 gap-y-2 mb-2"
       style={{
-        backgroundColor: "#141414",
-        border: "1px solid #222222",
+        backgroundColor: "#F5F5F5",
+        border: "1px solid #E0E0E0",
         animation: "faseyeon-fadein 0.3s ease-out 0.1s both",
       }}
     >
       <div className="flex items-center gap-2">
-        <span className="text-xs uppercase tracking-widest" style={{ color: "#888888" }}>
+        <span className="text-xs uppercase tracking-widest" style={{ color: "#666666" }}>
           Range
         </span>
-        <span className="text-sm font-semibold" style={{ color: "#F5F5F5" }}>
+        <span className="text-sm font-semibold" style={{ color: "#111111" }}>
           {fmt(min)} – {fmt(max)}
         </span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="text-xs uppercase tracking-widest" style={{ color: "#888888" }}>
+        <span className="text-xs uppercase tracking-widest" style={{ color: "#666666" }}>
           Max Saving
         </span>
         <span className="text-sm font-bold" style={{ color: "#2ECC71" }}>
@@ -414,10 +414,10 @@ function PriceSummaryBar({
         </span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="text-xs uppercase tracking-widest" style={{ color: "#888888" }}>
+        <span className="text-xs uppercase tracking-widest" style={{ color: "#666666" }}>
           Platforms
         </span>
-        <span className="text-sm font-semibold" style={{ color: "#F5F5F5" }}>
+        <span className="text-sm font-semibold" style={{ color: "#111111" }}>
           {results.length}
         </span>
       </div>
@@ -512,13 +512,13 @@ export default function IndexPage() {
   const logoUrl = cfg?.logoUrl;
 
   const colors = cfg?.colors ?? {
-    background: "#0A0A0A",
-    surface: "#141414",
-    border: "#222222",
+    background: "#FFFFFF",
+    surface: "#F5F5F5",
+    border: "#E0E0E0",
     bestPriceGreen: "#2ECC71",
     dropRed: "#E63946",
-    textPrimary: "#F5F5F5",
-    textSecondary: "#888888",
+    textPrimary: "#111111",
+    textSecondary: "#666666",
   };
 
   const accent = cfg?.brandColor?.accent ?? cfg?.brandColor?.primary ?? "#C8A96E";
@@ -599,13 +599,13 @@ export default function IndexPage() {
         }
 
         .faseyeon-search-input::placeholder {
-          color: #555555;
+          color: #AAAAAA;
         }
 
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: ${colors.background}; }
-        ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #3a3a3a; }
+        ::-webkit-scrollbar-thumb { background: #CCCCCC; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #AAAAAA; }
       `}</style>
 
       <div
@@ -676,7 +676,7 @@ export default function IndexPage() {
           >
             <form onSubmit={handleSubmit} className="relative flex items-center">
               {/* Search icon */}
-              <div className="absolute left-4 pointer-events-none" style={{ color: "#555555" }}>
+              <div className="absolute left-4 pointer-events-none" style={{ color: "#AAAAAA" }}>
                 <svg
                   width="18"
                   height="18"
@@ -857,7 +857,7 @@ export default function IndexPage() {
             {(cfg?.platforms ?? TRENDING_ITEMS).slice(0, 7).map
               ? (cfg?.platforms ?? ["ASOS", "Farfetch", "Zalando", "Net-a-Porter", "Zara", "H&M", "Brand Sites"]).slice(0, 7).map(
                   (p: string) => (
-                    <span key={p} className="text-[10px] uppercase tracking-widest" style={{ color: "#444444" }}>
+                    <span key={p} className="text-[10px] uppercase tracking-widest" style={{ color: "#999999" }}>
                       {p}
                     </span>
                   ),
