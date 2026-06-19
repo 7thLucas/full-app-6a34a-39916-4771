@@ -1,7 +1,10 @@
 # Product Overview
 
+## Product Name
+**Faseyeon**
+
 ## What We're Building
-A cross-platform fashion price comparison app. Users search for any fashion item — a specific sneaker, a designer bag, a trend piece — and the app instantly surfaces that item's availability and price across all major fashion retail platforms, flags platform-exclusive drops, and pinpoints the best price with a direct link to purchase.
+A cross-platform fashion price comparison app. Users search for any fashion item — a specific sneaker, a designer bag, a trend piece — and Faseyeon instantly surfaces that item's availability and price across all major fashion retail platforms, flags platform-exclusive drops, and pinpoints the best price with a direct link to purchase.
 
 ## The Problem
 Fashion retail is fragmented across dozens of platforms. The same item may be priced differently on ASOS, Farfetch, SSENSE, Zalando, Net-a-Porter, Zara, and brand sites — or available exclusively on one retailer. Shoppers waste 15–30 minutes per item manually tab-switching, miss exclusive drops that sell out before they're discovered, and routinely overpay simply because they don't know where the best deal lives.
