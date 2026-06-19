@@ -33,7 +33,7 @@ Aggregates from major fashion retail destinations: ASOS, Farfetch, SSENSE, Zalan
 - Trustworthy: real prices, real stock availability, no dark patterns
 
 ## Design System (as built)
-- Background: near-black `#0A0A0A`
+- Background: white `#FFFFFF`; surface/card: light grey `#F5F5F5`
 - Accent: warm gold `#C8A96E`
 - Best-price highlight: green `#2ECC71`
 - Exclusive drop alert: red `#E63946`
