@@ -32,6 +32,14 @@ Aggregates from major fashion retail destinations: ASOS, Farfetch, SSENSE, Zalan
 - Fast and frictionless — designed for decisive shoppers who know what they want
 - Trustworthy: real prices, real stock availability, no dark patterns
 
+## Design System (as built)
+- Background: near-black `#0A0A0A`
+- Accent: warm gold `#C8A96E`
+- Best-price highlight: green `#2ECC71`
+- Exclusive drop alert: red `#E63946`
+- Headlines: Playfair Display — luxury editorial weight
+- Body: Inter — clean, legible at speed
+
 ## Strategic Principles
 - Exclusivity is a first-class filter, not an afterthought
 - Always surface the best price with a direct path to purchase
