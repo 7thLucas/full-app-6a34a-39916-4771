@@ -1,0 +1,1 @@
+I wanna build an app to compare fashion items accross the platforms with the intention to find the exclusive fashion with the best prices
