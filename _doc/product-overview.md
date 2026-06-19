@@ -46,4 +46,4 @@ Aggregates from major fashion retail destinations: ASOS, Farfetch, SSENSE, Zalan
 - Zero friction from discovery to checkout
 
 ## Status
-Product name confirmed: Faseyeon. Core scope, target users, and MVP feature set locked in Deep Dive. Build in progress.
+MVP live. Product name: Faseyeon. Core scope, target users, and MVP feature set locked and built. Wishlist & price-drop alerts pre-staged as Phase 2. Exclusive drops feed and reseller arbitrage mode also queued as next goals.
