@@ -38,4 +38,4 @@ Aggregates from major fashion retail destinations: ASOS, Farfetch, SSENSE, Zalan
 - Zero friction from discovery to checkout
 
 ## Status
-Early scoping — product name, specific platform integrations, and user volume metrics to be confirmed in Deep Dive.
+Product name confirmed: Faseyeon. Core scope, target users, and MVP feature set locked in Deep Dive. Build in progress.
