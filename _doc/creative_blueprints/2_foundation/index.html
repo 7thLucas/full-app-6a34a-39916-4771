@@ -1,0 +1,40 @@
+<style>
+  .mode-landscape .sl-foundation-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
+  .mode-landscape .sl-content-panel { width: 55%; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
+  .mode-landscape .sl-visual-panel { width: 45%; min-height: 0; }
+  .mode-portrait .sl-foundation-layout { display: flex; flex-direction: column; min-height: 100%; }
+  .mode-portrait .sl-content-panel { padding: 2rem 1.5rem; }
+  .mode-portrait .sl-visual-panel { min-height: 280px; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-foundation-layout">
+    <div class="sl-content-panel">
+      <div class="flex items-center justify-between mb-4">
+        <span class="inline-block text-xs font-semibold tracking-widest uppercase" style="color:#8B5CF6;">Foundation</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#8B5CF6; border-color:#8B5CF630;">
+          <span class="text-xs font-semibold" style="color:#ffffff;">Validated</span>
+
+        </span>
+      </div>
+      <h1 class="text-3xl font-bold text-slate-900 leading-tight mb-8">Fashion fragmentation across platforms</h1>
+      <div class="space-y-5">
+        <div class="border-l-4 pl-4 relative" style="border-color:#F43F5E;">
+          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#E11D48;">The Problem</h2>
+          <p class="text-slate-700 leading-relaxed text-sm">Fashion shoppers today face a fragmented experience. The same dress might be available on 5 different platforms at wildly different prices. Finding exclusive items and comparing costs requires manual searching across countless sites, eating up time and leading to overspending.</p>
+        </div>
+        <div class="border-l-4 pl-4 relative" style="border-color:#8B5CF6;">
+          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#8B5CF6;">The Solution</h2>
+          <p class="text-slate-700 leading-relaxed text-sm">Fashion items are scattered across dozens of platforms—retailers, marketplaces, and boutiques—making it nearly impossible to compare prices, availability, and exclusivity in one place. Shoppers waste time switching between tabs, miss exclusive deals, and often overpay for items available cheaper elsewhere.</p>
+        </div>
+        <div class="border-l-4 border-sky-500 pl-4 relative"><h2 class="text-sm font-semibold text-sky-600 uppercase tracking-wide mb-1">Target Audience</h2><p class="text-slate-700 leading-relaxed text-sm">Fashion-conscious shoppers who value both style and savings</p></div>
+        <div class="border-l-4 border-amber-500 pl-4 relative"><h2 class="text-sm font-semibold text-amber-600 uppercase tracking-wide mb-1">Personal Motivation</h2><p class="text-slate-700 leading-relaxed text-sm">Empowering shoppers to make smarter fashion choices by removing friction from price discovery</p></div>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-2"><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Fashion</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">E-commerce</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Price Comparison</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Shopping Tools</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Exclusive Deals</span></div>
+      <div class="mt-8"><data-attribution /></div>
+    </div>
+    <div class="sl-visual-panel relative">
+      <img src="http://localhost:8001/common/image-generation?prompt=frustrated+shopper+surrounded+by+multiple+shopping+bags+and+laptop+screens+showing+different+prices&amp;keyspace=626xo4a0&amp;user_id=4771" alt="visual" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent opacity-40"></div>
+    </div>
+  </div>
+</section>
