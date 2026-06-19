@@ -22,7 +22,7 @@ One search. Every platform. Best price surfaced instantly, with exclusivity flag
 1. **Cross-platform item search** — by name, brand, or description; queries all major fashion retailers simultaneously
 2. **Price comparison table** — side-by-side pricing sorted lowest to highest, best-price highlighted with direct buy link
 3. **Exclusivity detection** — platform-exclusive items automatically flagged at the top of results
-4. **Item tracking & wishlist** — save items and receive price-drop or restock notifications across all tracked platforms
+4. **Item tracking & wishlist** *(Phase 2)* — save items and receive price-drop or restock notifications across all tracked platforms
 
 ## Platform Integrations (Direction)
 Aggregates from major fashion retail destinations: ASOS, Farfetch, SSENSE, Zalando, Net-a-Porter, Zara, H&M, and direct brand sites.
